@@ -35,5 +35,9 @@ app.use("/api/v1/job", jobRouter);
 app.use("/api/v1/application", applicationRouter);
 dbConnection();
 
+app.get("/",(req,res)=>{
+  res.send("<h1>Hello World...</h1>");
+});
+
 app.use(errorMiddleware);
 export default app;
