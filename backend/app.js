@@ -36,7 +36,7 @@ app.use("/api/v1/application", applicationRouter);
 dbConnection();
 
 app.get("/",(req,res)=>{
-  res.send("<h1>Hello World...</h1>");
+  res.send("<h1>Hello! I am Sayedhasan...</h1>");
 });
 
 app.use(errorMiddleware);
