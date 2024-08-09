@@ -24,7 +24,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://job-listing-portal-server.onrender.com/api/v1/user/getuser",
+          `${process.env.REACT_APP_BACKEND_URL}/api/v1/user/getuser`,
           {
             withCredentials: true,
           }
